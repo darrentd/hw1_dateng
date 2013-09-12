@@ -96,7 +96,7 @@
     </dependency>
   </dependencies>
   <scm>
-  	<connection>git@github.com:darrentd/hw1_dateng.git</connection>
-  	<developerConnection>git@github.com:darrentd/hw1_dateng.git</developerConnection>
+  	<connection>scm:git:https://github.com/darrentd/hw1_dateng.git</connection>
+  	<developerConnection>scm:git:https://github.com/darrentd/hw1_dateng.git</developerConnection>
   </scm>
 </project>
