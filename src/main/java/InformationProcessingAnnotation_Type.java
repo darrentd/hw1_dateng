@@ -13,7 +13,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** base annotation
- * Updated by JCasGen Wed Sep 11 20:14:02 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:03:59 EDT 2013
  * @generated */
 public class InformationProcessingAnnotation_Type extends Annotation_Type {
   /** @generated */
@@ -48,16 +48,16 @@ public class InformationProcessingAnnotation_Type extends Annotation_Type {
   /** @generated */
   final int     casFeatCode_producedBy;
   /** @generated */ 
-  public int getProducedBy(int addr) {
+  public String getProducedBy(int addr) {
         if (featOkTst && casFeat_producedBy == null)
       jcas.throwFeatMissing("producedBy", "InformationProcessingAnnotation");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_producedBy);
+    return ll_cas.ll_getStringValue(addr, casFeatCode_producedBy);
   }
   /** @generated */    
-  public void setProducedBy(int addr, int v) {
+  public void setProducedBy(int addr, String v) {
         if (featOkTst && casFeat_producedBy == null)
       jcas.throwFeatMissing("producedBy", "InformationProcessingAnnotation");
-    ll_cas.ll_setRefValue(addr, casFeatCode_producedBy, v);}
+    ll_cas.ll_setStringValue(addr, casFeatCode_producedBy, v);}
     
   
  
@@ -88,7 +88,7 @@ public class InformationProcessingAnnotation_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_producedBy = jcas.getRequiredFeatureDE(casType, "producedBy", "uima.tcas.Annotation", featOkTst);
+    casFeat_producedBy = jcas.getRequiredFeatureDE(casType, "producedBy", "uima.cas.String", featOkTst);
     casFeatCode_producedBy  = (null == casFeat_producedBy) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_producedBy).getCode();
 
  

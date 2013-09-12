@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Wed Sep 11 20:14:02 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:03:59 EDT 2013
  * @generated */
 public class Token_Type extends InformationProcessingAnnotation_Type {
   /** @generated */

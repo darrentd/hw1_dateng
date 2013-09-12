@@ -14,7 +14,7 @@
         <featureDescription>
           <name>producedBy</name>
           <description/>
-          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>confidence</name>

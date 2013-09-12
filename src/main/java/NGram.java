@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Wed Sep 11 20:14:02 EDT 2013
- * XML source: /Users/tengda/Documents/workspace/hw1_dateng/src/main/resources/hw1-dateng-typesystem.xml
+ * Updated by JCasGen Wed Sep 11 21:03:59 EDT 2013
+ * XML source: /Users/tengda/Documents/workspace/hw1-dateng/src/main/resources/hw1-dateng-typesystem.xml
  * @generated */
 public class NGram extends InformationProcessingAnnotation {
   /** @generated
