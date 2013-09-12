@@ -1,8 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
     <name>hw1-dateng-typesystem</name>
-    <description></description>
+    <description/>
     <version>1.0</version>
-    <vendor></vendor>
-  <types></types>
+    <vendor/>
+  <types>
+    <typeDescription>
+      <name>InformationProcessingAnnotation</name>
+      <description>base annotation</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>producedBy</name>
+          <description/>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>confidence</name>
+          <description/>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>Answer</name>
+      <description/>
+      <supertypeName>InformationProcessingAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>isCorrect</name>
+          <description/>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>Question</name>
+      <description/>
+      <supertypeName>InformationProcessingAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>Token</name>
+      <description/>
+      <supertypeName>InformationProcessingAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>AnswerScore</name>
+      <description/>
+      <supertypeName>InformationProcessingAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>score</name>
+          <description/>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>answer</name>
+          <description/>
+          <rangeTypeName>Answer</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>NGram</name>
+      <description/>
+      <supertypeName>InformationProcessingAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>tokens</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>Token</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
 </typeSystemDescription>
